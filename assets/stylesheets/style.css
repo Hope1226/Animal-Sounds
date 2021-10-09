@@ -21,4 +21,35 @@ body {
 .animal-farm {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.animal-farm .key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+  border: solid 1px white;
+  border-radius: 16px;
+}
+
+.animal-farm .key small {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: black;
+  text-transform: capitalize;
+  transition: all 1s;
+}
+
+.playing {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  background: chocolate;
+  color: white;
 }
